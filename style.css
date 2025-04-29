@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100wh;
+    height: 100vh;
+    background: rgb(45, 45, 78);
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+    width: 60%;
+    height: 50%;
+}
+
+.container > ul > li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.success-message{
+    display: none;
+}
