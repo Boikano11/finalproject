@@ -1,1 +1,20 @@
-console.log("script connected.")
+const form = document.getElementById('form')
+
+form.addEventListener('submit', (e) =>{
+    e.preventDefault()
+    const userEmail = document.getElementById('email').value
+    document.getElementById('main').innerHTML = `
+        <div class="success-message">
+                Thanks for subscribing!
+
+                A confirmation email has been sent to ${userEmail} 
+                Please open it and click the button inside to confirm your subscription.
+
+                Dismiss message
+                <div class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                    Coded by <a href="#">Your Name Here</a>.
+                </div>
+        </div>
+    `
+})

@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('/fonts/Roboto-Bold.ttf');
+    src: url('assets/fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('/fonts/Roboto-Regular.ttf');
+    src: url('assets/fonts/Roboto-Regular.ttf');
 }
 *{
     margin: 0;
@@ -21,6 +21,7 @@ body{
     background: rgb(45, 45, 78);
     color: #fff;
     font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
 }
 
 .container{
@@ -75,6 +76,15 @@ body{
     color: #F4F4F4;
     font-weight: bold;
 }
+.newsletter-form input:focus{
+    border-color: #ff7b3d;
+    color: #ff7b3d;
+    background: #ffd1db;
+}
+
+.newsletter-form button:active{
+    background-image: linear-gradient(to right, #FF527B, #FF6153);
+}
 
 .newsletter-form button:hover{
     cursor: pointer;
@@ -96,25 +106,17 @@ ul {
   }
   
   li {
-    background: url('images/icon-list.svg') no-repeat left center;
+    background: url('assets/images/icon-list.svg') no-repeat left center;
     padding-left: 30px;
     line-height: 1.5;
   }
   
+  /* Success */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.success-message{
-    display: none;
-}
+  .success-message{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    padding: 50px;
+  }
