@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
                 </header>
                 <main class="card-body">
                     <h1>Thanks for subscribing!</h1>
-                    <p>A confirmation email has been sent to ${userEmail}. Please open it and click the button inside to confirm your subscription.</p>
+                    <p>A confirmation email has been sent to <strong>${userEmail}.</strong> Please open it and click the button inside to confirm your subscription.</p>
                     <button id="success-btn" class="btn" type="button">Dismiss message</button>            
                 </main>
                 <footer class="card-footer">
