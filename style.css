@@ -71,10 +71,19 @@ body{
     border: 1px solid rgb(143, 143, 143);
 }
 
-.newsletter-form button{
+.btn{
     background-color: #1E2137;
     color: #F4F4F4;
     font-weight: bold;
+    padding: 15px 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-image: linear-gradient(to right, #FF527B, #FF6153);
 }
 .newsletter-form input:focus{
     border-color: #ff7b3d;
@@ -82,13 +91,6 @@ body{
     background: #ffd1db;
 }
 
-.newsletter-form button:active{
-    background-image: linear-gradient(to right, #FF527B, #FF6153);
-}
-
-.newsletter-form button:hover{
-    cursor: pointer;
-}
 
 .newsletter-img{
     display: flex;
@@ -116,7 +118,22 @@ ul {
   .success-message{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px;
     height: 100%;
-    padding: 50px;
+  }
+
+  .success-message .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 40px;
+  }
+
+  .success-message .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
   }
