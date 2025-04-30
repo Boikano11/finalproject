@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,21 +20,84 @@ body{
     height: 100vh;
     background: rgb(45, 45, 78);
     color: #fff;
+    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .container{
     display: flex;
+    gap: 2px;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     color: black;
-    width: 60%;
-    height: 50%;
+    height: 80%;
+    border-radius: 20px;
+}
+.container > section {
+    width: fit-content;
+    height: 100%;
 }
 
-.container > ul > li {
-    list-style: none;
+.container:first-child{
+    width: 60%;
 }
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 50px 30px;
+}
+.newsletter-form h1{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 3.5em;
+}
+.newsletter-form label{
+    font-weight: bold;
+}
+.newsletter-form button, input{
+    padding: 15px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.newsletter-form button{
+    background-color: #1E2137;
+    color: #F4F4F4;
+    font-weight: bold;
+}
+
+.newsletter-form button:hover{
+    cursor: pointer;
+}
+
+.newsletter-img{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+.desktop-img{
+    object-fit: cover;
+    padding: 15px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    background: url('images/icon-list.svg') no-repeat left center;
+    padding-left: 30px;
+    line-height: 1.5;
+  }
+  
+
 
 
 
