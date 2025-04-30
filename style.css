@@ -66,6 +66,10 @@ body{
     border: none;
 }
 
+.newsletter-form input{
+    border: 1px solid rgb(143, 143, 143);
+}
+
 .newsletter-form button{
     background-color: #1E2137;
     color: #F4F4F4;
